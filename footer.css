@@ -1,0 +1,174 @@
+/* include footer-member.css */
+
+/* include footer-member.css */
+
+#footer-banner{
+  display: table;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+#footer-banner .container{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-top-section{
+    padding: 4rem 0 ;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #eee;
+  }
+  .footer-logo img {
+    height: 4rem;
+  }
+  .footer-logo-content p{
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "sf_pro_displayregular";
+    max-width: 320px;
+  }
+  .footer-logo h3{
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "sf_pro_displaysemibold";
+    margin: 0 0 10px;
+  }
+  .footer-navigation-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 15px 0;
+    display: block;
+    position: relative;
+  }
+  ul.footer-links li {
+    position: relative;
+    display: block;
+    padding-left: 0;
+    margin: 1.2rem 0 1.7rem;
+    font-size: 17px;
+    line-height: 19px;
+    font-family: "sf_pro_displayregular";
+  }
+  ul.footer-links li a{
+    color: #222;
+  }
+  ul.footer-links li a:hover{
+    color: #0562e8;
+  }
+  @media screen and (max-width:1024px){
+    .footer-top-section {
+      padding: 2rem 0;
+    }
+    .footer-logo-content{
+        margin-bottom: 2rem;
+    }
+    .footer-logo-content h3{
+        font-size: 2.5rem;
+        padding: 0;
+    }
+  }
+  .footer-bottom-section{
+    background-color: #F8F9FB;
+    padding: 1.5rem 0;
+  }
+  .legal-activities-outer {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    justify-content: flex-end;
+  }
+  .legal-activities-links {
+    display: block;
+    text-align: left;
+    display: flex;
+  }
+  .legal-activities-links .copyright-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "sf_pro_displayregular";
+    font-weight: lighter;
+    margin: 0;
+  }
+  .legal-activities-links .pipe {
+    font-size: 15px;
+    margin: 0 4px;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .legal-activities-links a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #213047;
+    font-family: "sf_pro_displayregular";
+  }
+  .social-media-links li {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .social-media-links a {
+      display: block;
+      padding: .3rem;
+      background-color: #dddd;
+      border-radius: 100px;
+      margin: 0 4px;
+  }
+  .social-icon-svg {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .social-icon-svg .circle-cls {
+    fill: none;
+    stroke: none;
+    stroke-miterlimit: unset;
+    stroke-width: 0;
+  
+  }
+  .social-icon-svg .path-cls {
+    fill: #424242;
+  }
+  .social-media-links a:hover .social-icon-svg .circle-cls {
+    stroke: #0562e8;
+    fill: #0562e8;
+  }
+  .social-media-links a:hover {
+    background: #0562e8;
+  }
+  .social-media-links a:hover .social-icon-svg .path-cls {
+    fill: #fff;
+  }
+  /* footer banner */
+  .footer-banner {
+    padding: 5rem 0;
+    background-color: rgba(83, 109, 254, 0.1);
+  }
+  .footer-banner-wrapper {
+    text-align: center;
+    display: grid;
+    height: 100%;
+    align-items: center;
+  }
+  .footer-banner-image {
+    text-align: center;
+  }
+  .footer-banner-image img {
+    width: 400px;
+  }
+  @media screen and (max-width:640px){
+    .legal-activities-outer,
+    .legal-activities-links{
+      display: block;
+      text-align: center;
+    }
+    .legal-activities-links .pipe {
+      display: none;
+    }
+    .footer-banner-box {
+      margin-bottom: 30px;
+    }
+  }

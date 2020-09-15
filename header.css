@@ -1,0 +1,269 @@
+
+.overflow-hidden {
+    overflow: hidden;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.04);
+  }
+
+  .header.header-fixed{
+    background: #fff;
+  }
+
+  .svg-icon.hyperlink-arrow-icon {
+    width: 22px;
+    height: 25px;
+    margin-left: 0;
+    vertical-align: middle;
+    transition: .4s ease all;
+}
+  .navigation-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navigation-menu li{
+    line-height: 80px;
+  }
+  .navigation-menu.nav-left, .navigation-menu.nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation-menu.nav-right {
+    margin-left: auto;
+  }
+  .brand-wrapper, .brand-image, #brand-logo{
+    display: flex;
+    align-items: center;
+  }
+  .brand-image {
+    width: auto;
+    cursor: pointer;
+    min-height: 80px;
+  }
+  .brand-wrapper .logo-text{
+    font-size: 21px;
+    font-weight: lighter;
+    padding: .5rem;
+    position: relative;
+    line-height: 25px;
+    font-family: "sf_pro_displaybold";
+    letter-spacing: 0px;
+    color: #000;
+    margin: 0;
+  }
+  .brand-image a {
+    display: block;
+  }
+  .toggle-topMenu {
+    display: none;
+    width: 22px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .toggle-topMenu div {
+    width: 100%;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .navbar-menu {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .navbar-menu li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .navbar-menu li .nav-links {
+    font-size: 18px;
+    padding: .5rem;
+    position: relative;
+    line-height: 22px;
+    font-family: "sf_pro_displayregular";
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .nav-links.boxed-links svg path {
+    fill: #fff;
+  }
+  .nav-links.boxed-links:hover{
+    transform: scale(1.1);
+  }
+  .navbar-menu li .nav-links::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: calc(100% - 30px);
+      height: 0;
+      background: transparent;
+      transition: .2s linear;
+  }
+  .navbar-menu li:hover .nav-links, 
+  .navbar-menu li .nav-links.active {
+    color: #1034fe;
+  }
+  .navbar-menu li:hover .nav-links::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: calc(100% - 30px);
+      height: 1px;
+      background: #1034fe;
+      transition: .2s linear;
+  }
+  .navbar-menu li .nav-links.boxed-links {
+    background: #1034fe;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    min-height: 48px;
+    font-weight: 400;
+    display: block;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    font-family: "sf_pro_displaymedium";
+    -webkit-transition: 0.4s ease all;
+    -o-transition: 0.4s ease all;
+    transition: 0.3s ease all;
+    overflow: hidden;
+  }
+  .navbar-menu li .nav-links.boxed-links::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -50px;
+      bottom: 0;
+      left: 0;
+      border-right: 50px solid transparent;
+      border-bottom: 80px solid #b3b7d24f;
+      -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-menu li {
+      -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-menu li .nav-links.boxed-links:hover {
+    color: #fff;
+    background-color:  #1034fe;
+    box-shadow: 10px 15px 7px rgba(16, 52, 254, 0.2);
+  }
+  #login-link {
+    vertical-align: middle;
+    margin-right: 0;
+  }
+ 
+  @media only screen and (max-width: 1368px) {
+    .navbar-menu li {
+        margin: 0 15px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .header{
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+    .header.header-fixed.blue-header {
+      background-color: #fff;
+    }
+    .blue-header .brand-wrapper .logo-text,
+  .blue-header .navbar-menu li .nav-links,
+  .blue-header .navbar-menu li:hover .nav-links {
+    color: #000;
+  }
+    .header.dropdown-open{
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+    .toggle-topMenu {
+        display: block;
+    }
+    .navigation-menu.nav-right {
+        margin-left: 0;
+    }
+    .navigation-menu.nav-left, .navigation-menu.nav-right {
+        display: none;
+    }
+    .navigation-menu.nav-right.show {
+      display: flex;
+    }
+    .navigation-menu li {
+        line-height: 60px;
+    }
+    .navigation-bar, .navigation-menu.nav-left, .navigation-menu.nav-right {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .navbar-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-menu li {
+        border-top: 1px solid #eee;
+        font-size: 25px;
+    }
+    .navbar-menu li .nav-links.boxed-links {
+        max-width: 220px;
+        margin: 15px auto;
+    }
+    .toggle-topMenu {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        top: 22px;
+  
+    }
+    .overflow-hidden {
+      overflow: hidden;
+    }
+    .brand-image {
+      min-height: 65px;
+    }
+  }
+  
+  .overflow-hidden {
+    overflow: visible;
+  }
+  

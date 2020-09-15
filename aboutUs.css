@@ -1,0 +1,78 @@
+@import "grid.css";
+@import "primary.css";
+@import "header.css";
+@import "font.css";
+@import "footer-member.css";
+@import "footer.css";
+@import "common.css";
+
+body {
+    font-family: "sf_pro_displaylight";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #334960;
+    background-color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 0;
+}
+/* .banner-section{
+	padding: 80px 0 30px;
+    position: relative;
+    height: 600px;
+    background: transparent linear-gradient(180deg,#1034FE 0%,#081a7f 100%) 0% 0% no-repeat padding-box;
+} */
+.mar-t-8{
+  padding: 12rem 0 10rem !important;
+}
+.about-nexastack-container.mar-70 {
+    margin-bottom: 100px;
+}
+.about-nexastack-content p{
+    font-size: 20px;
+}
+.about-nexastack-image {
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.about-nexastack-content {
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+.about-feature-section {
+    background-color: rgba(83, 109, 254, 0.1);
+}
+.about-feature-item-box figure {
+    margin-bottom: 1.5rem;
+}
+.about-feature-item-box img {
+    width: 60px;
+}
+.about-feature-section .mar-b-30 {
+    margin-bottom: 10px;
+}
+.about-feature-item-box{
+    max-width: 100%;
+    margin: 0 3rem 0 0;
+}
+@media screen and (max-width:640px) {
+.about-nexastack-container.mar-70 {
+	margin-bottom: 20px;
+}
+.about-nexastack-content p {
+	font-size: 18px;
+}
+.about-feature-item-box {
+    max-width: 100%;
+    text-align: center;
+}
+.about-feature-section .mar-b-30 {
+    margin-bottom: 30px;
+}
+}
+
+
+
